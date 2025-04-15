@@ -10,3 +10,48 @@ body {
     font-family: sans-serif;
 }
 
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #272727;
+    padding: 1.2em;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+    gap: 1rem;
+    margin: 1rem;
+}
+
+.task-card {
+    border: .1em solid magenta;
+    background-color: #444;
+    padding: 1em;
+}
+
+.task-header {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr 1fr;
+    background-color: #555;
+    padding: .9em;
+    margin-bottom: 1rem;
+}
+
+.task-description {
+    min-width: 100%;
+}
+
+.task-section, .task-section--flex {
+    margin: .8rem;
+}
+
+.task-section--flex {
+    display: flex;
+}
+
+.task-subtask {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+}
